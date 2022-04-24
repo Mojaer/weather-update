@@ -13,7 +13,7 @@ function LonLat() {
     .then(resp => resp.json())
     .then(data => {
 
-      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=b776eb19cb750275132cc185f36bf44b`)
+      fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=b776eb19cb750275132cc185f36bf44b`)
         .then(resp => resp.json())
         .then(tempdata => {
           const temperature = (tempdata.main.temp - 273.3);
