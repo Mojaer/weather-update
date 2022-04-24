@@ -21,9 +21,9 @@ function LonLat() {
           console.log(tempdata)
 
 
-          document.getElementById('temp').innerText=temperature.toFixed(2);
+          document.getElementById('temp').innerText = temperature.toFixed(2);
 
-          document.getElementById('Name').innerText =tempdata.name;
+          document.getElementById('Name').innerText = tempdata.name;
 
           document.getElementById('weatherd-discription').innerText = tempdata.weather[0].description
         }
